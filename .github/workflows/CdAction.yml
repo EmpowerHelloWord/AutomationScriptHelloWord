@@ -26,11 +26,11 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Skyline DataMiner Deploy Action
-      uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v1.0.11
-      with:
-        api-key: ${{ secrets.DATAMINER_DEPLOY_KEY }}
-        solution-path: AutomationScript.sln
-        artifact-name: EmpowerHelloWord
-        version: 1.0.1
-        build-number: ${{ github.run_number }}
+        uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v1.0.11
+        with:
+         api-key: ${{ secrets.DATAMINER_DEPLOY_KEY }}
+         solution-path: AutomationScript.sln
+         artifact-name: EmpowerHelloWord
+         version: 1.0.1
+         build-number: ${{ github.run_number }}
   
